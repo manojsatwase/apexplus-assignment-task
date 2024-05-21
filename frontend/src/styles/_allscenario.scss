@@ -1,0 +1,61 @@
+.all-scenarios { 
+  margin: 0rem 3rem 0 1rem;
+    .all-btn-seaction{
+        padding-top: 1rem;
+        @include flex(row,space-between);
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color:white;
+          }
+        
+          .buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            
+            .new-btn,
+            .add-btn ,
+            .delete-btn{
+              padding: 0.8rem 1.5rem;
+            }
+
+            .new-btn{
+                background-color: #4A9ABA;
+                &:hover{
+                 background-color: #297ea0;
+                }
+            }
+            .add-btn{
+                background-color: #5CB85B;
+                &:hover{
+                 background-color: #2f902e; 
+                }
+            }
+            .delete-btn{
+                background-color: #E37834;
+                &:hover{
+                    background-color: #ae5822;
+                }
+            }
+          
+            button {
+              padding: 0.5rem 1.5rem;
+            //   background-color: #007bff;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+              border-radius: 4px;
+        
+              &:hover {
+                background-color: #0056b3;
+              }
+            }
+           
+          }
+        }
+     
+    }
+    
+  
