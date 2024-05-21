@@ -1,0 +1,134 @@
+@mixin heading($spacing:3px,$weight:300,$case:uppercase){
+    letter-spacing: $spacing;
+    font-weight: $weight;
+    text-transform: $case;
+  }
+  
+  @mixin textColor($color) {
+      color: $color;
+   }
+  
+   @mixin bgColor($color) {
+    background-color: $color;
+  }
+  
+  @mixin flex($direction:row, $justifyContent:center, $alignItems:center, $gap:1rem){
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justifyContent;
+   align-items: $alignItems;
+   gap: $gap;
+  }
+  
+  @mixin grid($col: 1fr, $gap: 1rem, $row: unset) {
+      display: grid;
+      grid-template-columns: $col;
+      grid-template-rows: $row;
+      gap: $gap;
+    }
+    
+  @mixin inputStyle($w: 100%, $p: 1rem, $bgColor: inherit, $border: none){
+    padding: $p;
+    border: $border;
+    background-color: $bgColor;
+    width: $w;
+    outline: none;
+  }
+  
+  @mixin buttonStyle($bgColor: #007bff, $textColor: white, $size:"1rem", $hoverColor: #0056b3, $padding: 0.5rem 1rem, $borderRadius: 8px, $transition: 0.3s) {
+      background-color: $bgColor;
+      color: $textColor;
+      font-size: $size;
+      border: none;
+      padding: $padding;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      transition: background-color $transition;
+      outline: none;
+    
+      &:hover {
+        background-color: $hoverColor;
+      }
+    }
+    
+  
+  @mixin positionCenter ($top:50%,$left: 50%){
+    top: $top;
+    left: $left;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin flexCenter() {
+      display: flex;
+      justify-content: center; /* Horizontal centering */
+      align-items: center; /* Vertical centering */
+    }
+  
+    @mixin square($size: 1rem) {
+     height: $size;
+     width: $size;
+    }
+  
+    @mixin baseShadow() {
+       box-shadow: 0 0 10rem rgba(0, 0, 0, 0.384);;
+    }
+  
+    @mixin boxShadow($direction:row,$alignItems:center,$gap:1rem,$padding: 0.5rem 1rem,$margin:0.5rem 1rem){
+        display: flex;
+        flex-direction: $direction;
+        align-items: $alignItems;
+        gap: $gap;;
+        padding: $padding;
+        margin: $margin;
+        width: 100%;
+        height: fit-content;
+        box-shadow: 
+            rgba(100, 100, 111, 0.2)
+            0px 7px 29px 0px;
+        margin: 1rem 0;
+        border-radius: 8px;
+    }
+  
+    @mixin backgroundImage($image, $size: cover, $position: center, $repeat: no-repeat) {
+      background-image: url($image);
+      background-size: $size;
+      background-position: $position;
+      background-repeat: $repeat;
+    }
+  
+    @mixin transition($properties, $duration: 0.3s, $timing-function: ease) {
+      transition: $properties $duration $timing-function;
+    }
+  
+    @mixin borderRadius($radius) {
+      border-radius: $radius;
+    }
+  
+    @mixin overflow($value) {
+      overflow: $value;
+    }
+  
+    @mixin opacity($value) {
+      opacity: $value;
+    }
+  
+    @mixin fontSize($size) {
+      font-size: $size;
+    }
+  
+    @mixin lineHeight($height) {
+      line-height: $height;
+    }
+  
+    @mixin textAlign($align: center) {
+      text-align: $align;
+    }
+  
+    @mixin cursor($cursor) {
+      cursor: $cursor;
+    }
+  
+    @mixin rounded(){
+      border-radius: 50%;
+    }
