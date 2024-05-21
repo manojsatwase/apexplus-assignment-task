@@ -1,0 +1,65 @@
+.home {
+  margin: 0rem 3rem 0 1rem;
+
+  .buttons{
+    justify-content: end;
+    .start-btn{
+      background-color: #5CB85B;
+    }
+    .stop-btn{
+      width: 9rem;
+      background-color: #4A9ABA;
+    }
+  }
+ 
+   .simulation-container {
+    max-width: 78vw;
+    border: 2px solid #125812;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    gap: 0; // No gap between grid items
+    width: 100%; 
+    height: 625px;  
+    position: relative; 
+    margin-bottom: 2rem;
+  }
+  
+  .grid-cell {
+    border: 0.5px solid #125812; // Border for each grid cell
+  }
+  
+  .vehicle-box {
+    position: absolute; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .vehicle {
+    width: 20px;
+    height: 20px;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+  
+  
+  // .vehicle-blue {
+  //   background-color: #0000FF;
+  //   width: 20px;
+  //   height: 20px;
+  //   font-size: 0.5rem;
+  //   // Position for the first column and third row
+  //   top: calc(5 * (100% / 6)); // Third row (index 2, because it's zero-based)
+  //   left: calc(4 * (100% / 6));
+  //   position: absolute; 
+  //   transform: translate(0%, 60%); // Center the vehicle within its parent
+  //   margin: 0.5rem auto;
+  // }
+  
+  
+}
